@@ -6,9 +6,6 @@ import kebabCase from 'lodash/kebabCase'
 import placePropsOntoChildren from './recursiveCloneChildrenWithProps'
 import createExposeValueAsProps from './createExposeValueAsProps'
 
-// NOTE: This can be removed if a feature to pass fields dependent state is added upstream.
-// See: https://github.com/erikras/redux-form/issues/841
-
 const exposeValuePropType = PropTypes.oneOfType([
   PropTypes.string,
   PropTypes.shape({
