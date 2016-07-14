@@ -1,6 +1,6 @@
 {
   "name": "redux-form-field-group",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Pass data to dependent fields with redux-form@6",
   "main": "dist/index.js",
   "jsnext:main": "dist/index.es",
