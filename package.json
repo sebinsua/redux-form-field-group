@@ -1,0 +1,73 @@
+{
+  "name": "redux-form-field-group",
+  "version": "0.0.1",
+  "description": "Pass data to dependent fields with redux-form@6",
+  "main": "dist/index.js",
+  "jsnext:main": "dist/index.es",
+  "entry": "src/index.js",
+  "directories": {
+    "src": "src/**/*",
+    "test": "test/**/*"
+  },
+  "scripts": {
+    "prepublish": "npm run build",
+    "test": "npm run test:lint && npm run test:unit",
+    "test:lint": "standard $npm_package_directories_src | snazzy",
+    "test:unit": "ava $npm_package_directories_test",
+    "build": "rollup -c"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sebinsua/redux-form-field-group.git"
+  },
+  "keywords": [
+    "redux-form",
+    "dependent",
+    "data",
+    "field",
+    "group"
+  ],
+  "author": "Seb Insua <me@sebinsua.com>",
+  "license": "Unlicense",
+  "bugs": {
+    "url": "https://github.com/sebinsua/redux-form-field-group/issues"
+  },
+  "homepage": "https://github.com/sebinsua/redux-form-field-group#readme",
+  "ava": {
+    "require": [
+      "babel-register"
+    ],
+    "babel": "inherit"
+  },
+  "standard": {
+    "parser": "babel-eslint"
+  },
+  "peerDependencies": {
+    "react": "^15.2.1",
+    "redux-form": "^6.0.0-rc.3"
+  },
+  "dependencies": {
+    "lodash": "^4.13.1"
+  },
+  "devDependencies": {
+    "ava": "^0.15.2",
+    "babel-eslint": "^6.1.2",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-es2015-rollup": "^1.1.1",
+    "babel-preset-react": "^6.11.1",
+    "babel-preset-stage-0": "^6.5.0",
+    "babelrc-rollup": "^2.0.0",
+    "camelcase": "^3.0.0",
+    "enzyme": "^2.4.1",
+    "react": "^15.2.1",
+    "react-addons-test-utils": "^15.2.1",
+    "react-dom": "^15.2.1",
+    "react-redux": "^4.4.5",
+    "redux": "^3.5.2",
+    "redux-form": "^6.0.0-rc.3",
+    "rollup": "^0.34.1",
+    "rollup-plugin-babel": "^2.6.1",
+    "snazzy": "^4.0.0",
+    "standard": "^7.1.2"
+  }
+}
