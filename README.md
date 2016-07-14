@@ -1,4 +1,4 @@
-# component-horizontal-stacked-bar
+# redux-form-field-group
 > Pass data to dependent fields with `redux-form@6`
 
 This can be deprecated [if a feature to pass dependent field state is added upstream to `redux-form`](https://github.com/erikras/redux-form/issues/841).
