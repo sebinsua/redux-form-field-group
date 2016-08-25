@@ -1,7 +1,7 @@
 # redux-form-field-group
 > Pass data to dependent fields with `redux-form@6`
 
-This can be deprecated [if a feature to pass dependent field state is added upstream to `redux-form`](https://github.com/erikras/redux-form/issues/841).
+**This is deprecated** [as a feature to pass dependent field state has been added upstream to `redux-form`](https://github.com/erikras/redux-form/issues/841) as of [`redux-form@6.0.0-rc5`](https://github.com/erikras/redux-form/releases/tag/v6.0.0-rc.5).
 
 **Example**: Passing a single property into some inner `<Field>`s.
 
