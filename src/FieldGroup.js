@@ -24,10 +24,10 @@ function renderChildrenWithGroupsProps ({
   input: {
     value,
     className,
-    groupName,
-    expose,
     children
-  }
+  },
+  groupName,
+  expose
 }) {
   // Take the field group name and a list of properties you wish to expose
   // and place each of these into the props of the non-DOM, redux-formy children within
@@ -45,9 +45,10 @@ renderChildrenWithGroupsProps.propTypes = {
   input: PropTypes.shape({
     value: PropTypes.any.isRequired,
     className: PropTypes.string.isRequired,
-    expose: exposePropType,
     children: PropTypes.node.isRequired
-  }).isRequired
+  }).isRequired,
+  groupName: PropTypes.string,
+  expose: exposePropType
 }
 
 export function FieldGroup ({
