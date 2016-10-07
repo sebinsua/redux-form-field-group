@@ -22,11 +22,11 @@ function isReduxFormField (child) {
 
 function renderChildrenWithGroupsProps ({
   input: {
-    value,
-    className,
-    children
+    value
   },
   groupName,
+  className,
+  children,
   expose
 }) {
   // Take the field group name and a list of properties you wish to expose
@@ -43,12 +43,12 @@ function renderChildrenWithGroupsProps ({
 
 renderChildrenWithGroupsProps.propTypes = {
   input: PropTypes.shape({
-    value: PropTypes.any.isRequired,
-    className: PropTypes.string.isRequired,
-    children: PropTypes.node.isRequired
+    value: PropTypes.any.isRequired
   }).isRequired,
   groupName: PropTypes.string,
-  expose: exposePropType
+  className: PropTypes.string.isRequired,
+  expose: exposePropType,
+  children: PropTypes.node.isRequired
 }
 
 export function FieldGroup ({
